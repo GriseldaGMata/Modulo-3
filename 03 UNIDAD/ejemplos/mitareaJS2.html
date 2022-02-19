@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+    <script>
+
+        var cifra1, cifra2, cifra3, cifra4, cifra5;
+        var nombre;
+
+
+        nombre = prompt('Bienvenido al portal Inteligente. Ingrese su nombre', '');
+        cifra1 = prompt('Ingrese 1er numero comprendidos entre el 0 y el 1000:', '');
+        cifra2 = prompt('Ingrese 2do numero comprendidos entre el 0 y el 1000:', '');
+        cifra3 = prompt('Ingrese 3er numero comprendidos entre el 0 y el 1000:', '');
+        cifra4 = prompt('Ingrese 4to numero comprendidos entre el 0 y el 1000:', '');
+        cifra5 = prompt('Ingrese 5to numero comprendidos entre el 0 y el 1000:', '');
+        cifra1 = parseInt(cifra1);
+        cifra2 = parseInt(cifra2);
+        cifra3 = parseInt(cifra3);
+        cifra4 = parseInt(cifra4);
+        cifra5 = parseInt(cifra5);
+
+
+
+        if (cifra1 > cifra2 && cifra1 > cifra3) {
+            document.write("el mayor es el " + cifra1);
+        } else {
+            if (cifra2 > cifra3) {
+                document.write(nombre+" "+"el mayor numero ingresado es el " + cifra2);
+            } else {
+                if (cifra3 > cifra4) {
+                    document.write(nombre+" "+"el mayor numero ingresado es el " + cifra3);
+                } else {
+                    if (cifra4 > cifra5) {
+                        document.write(nombre+" "+"el mayor numero ingresado es el " + cifra4);
+                    } else {
+                        document.write(nombre+" "+"el mayor numero ingresado es el " + cifra5);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
